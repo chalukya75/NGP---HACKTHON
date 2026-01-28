@@ -6,9 +6,13 @@ import { AuthProvider, useAuth } from "@/context/AuthContext";
 import LoginPage from "@/pages/LoginPage";
 import RoleSelectionPage from "@/pages/RoleSelectionPage";
 import DashboardPage from "@/pages/DashboardPage";
-import ArraysModulePage from "@/pages/ArraysModulePage";
+import DSATracksPage from "@/pages/DSATracksPage";
+import TrackDetailPage from "@/pages/TrackDetailPage";
 import TaskPage from "@/pages/TaskPage";
 import ProfilePage from "@/pages/ProfilePage";
+import ResumeBuilderPage from "@/pages/ResumeBuilderPage";
+import PlacementReadinessPage from "@/pages/PlacementReadinessPage";
+import AnalyticsTrackPage from "@/pages/AnalyticsTrackPage";
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -25,7 +29,6 @@ const ProtectedRoute = ({ children }) => {
     return <Navigate to="/login" replace />;
   }
   
-  // If user has no role, redirect to role selection
   if (!user.role && window.location.pathname !== '/select-role') {
     return <Navigate to="/select-role" replace />;
   }
@@ -48,7 +51,6 @@ const RoleGuard = ({ children }) => {
     return <Navigate to="/login" replace />;
   }
   
-  // If user already has role, redirect to dashboard
   if (user.role) {
     return <Navigate to="/dashboard" replace />;
   }
@@ -72,14 +74,34 @@ function App() {
               <DashboardPage />
             </ProtectedRoute>
           } />
-          <Route path="/dsa/arrays" element={
+          <Route path="/dsa" element={
             <ProtectedRoute>
-              <ArraysModulePage />
+              <DSATracksPage />
             </ProtectedRoute>
           } />
-          <Route path="/task/:taskId" element={
+          <Route path="/dsa/:trackId" element={
+            <ProtectedRoute>
+              <TrackDetailPage />
+            </ProtectedRoute>
+          } />
+          <Route path="/task/:trackId/:taskId" element={
             <ProtectedRoute>
               <TaskPage />
+            </ProtectedRoute>
+          } />
+          <Route path="/analytics" element={
+            <ProtectedRoute>
+              <AnalyticsTrackPage />
+            </ProtectedRoute>
+          } />
+          <Route path="/resume" element={
+            <ProtectedRoute>
+              <ResumeBuilderPage />
+            </ProtectedRoute>
+          } />
+          <Route path="/readiness" element={
+            <ProtectedRoute>
+              <PlacementReadinessPage />
             </ProtectedRoute>
           } />
           <Route path="/profile" element={
