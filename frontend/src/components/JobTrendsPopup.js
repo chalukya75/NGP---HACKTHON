@@ -31,7 +31,7 @@ export const JobTrendsPopup = ({ onClose }) => {
   if (trends.length === 0) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/20 flex items-center justify-center z-50" data-testid="job-trends-popup">
+    <div className="fixed inset-0 bg-black/20 flex items-center justify-center z-40" data-testid="job-trends-popup" onClick={(e) => e.target === e.currentTarget && onClose()}>
       <Card className="w-full max-w-md mx-4 border-slate-200 shadow-xl">
         <CardContent className="p-6">
           <div className="flex items-center justify-between mb-4">
