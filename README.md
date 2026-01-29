@@ -83,3 +83,62 @@ BRO is a mentor-style assistant built using open-source AI models.
 - Placement aspirants
 - Beginner to intermediate developers
 - Students preparing for IT roles
+
+ #   technical work flow 
+- ┌──────────────────────────┐
+│        STUDENT           │
+│ (Web / Mobile Browser)   │
+└───────────┬──────────────┘
+            │
+            ▼
+┌──────────────────────────┐
+│      FRONTEND (UI)       │
+│  React / Next.js         │
+│  Tailwind CSS            │
+│  Charts & Dashboard      │
+│  Resume Builder          │
+│  Voice + Text Input      │
+└───────────┬──────────────┘
+            │ REST / HTTPS
+            ▼
+┌──────────────────────────┐
+│  AUTHENTICATION SERVICE  │
+│  Domain Email Validation │
+│  OTP / Password          │
+│  JWT Tokens              │
+└───────────┬──────────────┘
+            │
+            ▼
+┌──────────────────────────┐
+│       BACKEND API        │
+│   Node.js + Express      │
+│                          │
+│ • User Management        │
+│ • Skill Tracks Logic     │
+│ • RPG XP Engine          │
+│ • Task Evaluation        │
+│ • Resume Logic           │
+│ • Reminder Scheduler     │
+└───────────┬──────────────┘
+            │
+   ┌────────┴─────────┐
+   ▼                  ▼
+┌──────────────┐  ┌─────────────────┐
+│   DATABASE   │  │   BRO AI ASSIST  │
+│  MongoDB     │  │ Open-Source LLM  │
+│              │  │ Voice + Text     │
+│ • Users      │  │ Context Aware    │
+│ • Tasks      │  │ Ethical Guidance │
+│ • Progress   │  └─────────────────┘
+│ • Resumes    │
+│ • Activity   │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────────────────┐
+│ NOTIFICATION & REMINDERS │
+│ Cron Jobs / Scheduler    │
+│ Email / In-App Alerts    │
+│ LeetCode / GitHub / LN   │
+└──────────────────────────┘
+
