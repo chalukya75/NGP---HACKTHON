@@ -83,9 +83,8 @@ BRO is a mentor-style assistant built using open-source AI models.
 - Placement aspirants
 - Beginner to intermediate developers
 - Students preparing for IT roles
-
- #   technical work flow 
-- ┌──────────────────────────┐
+# technical work flow
+                 ┌──────────────────────────┐
 │        STUDENT           │
 │ (Web / Mobile Browser)   │
 └───────────┬──────────────┘
@@ -141,4 +140,5 @@ BRO is a mentor-style assistant built using open-source AI models.
 │ Email / In-App Alerts    │
 │ LeetCode / GitHub / LN   │
 └──────────────────────────┘
+
 
