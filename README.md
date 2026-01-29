@@ -1,10 +1,10 @@
-# 🎮 CareerForge RPG – Learn, Build, Get Placed
+# 🎮 skillForge RPG – Learn, Build, Get Placed
 
-CareerForge RPG is a role-playing based placement preparation platform designed
+skillForge RPG is a role-playing based placement preparation platform designed
 to help students improve **technical skills**, **coding ability**, and
 **interview confidence** through real-world, task-based learning.
 
-Unlike traditional learning platforms, CareerForge focuses on **skill-driven
+Unlike traditional learning platforms, skillForge focuses on **skill-driven
 progression**, where students level up only by completing meaningful technical
 tasks.
 
