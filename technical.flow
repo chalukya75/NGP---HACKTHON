@@ -1,7 +1,7 @@
 # technical flow chart
 ┌──────────────────────────┐
 │        STUDENT           │
-│ (Web / Mobile Browser)   │
+│   ( Mobile Browser)   │
 └───────────┬──────────────┘
             │
             ▼
